@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Find your film</title>
+    <title>Watchlist</title>
   </head>
   <body class="flex flex-col items-center justify-center font-Inter sm:mt-16">
     <header class="w-full sm:max-w-[550px]">
@@ -35,44 +35,15 @@
         "
         class="flex h-[20vh] items-center justify-between p-4 text-center sm:mx-auto sm:h-[30vh] sm:max-w-[550px]"
       >
-        <h1 class="text-3xl font-bold text-white sm:text-5xl">
-          Find your film
-        </h1>
-        <a
-          href="./mywatchlist.html"
-          class="text-xs font-bold text-white sm:text-sm"
-          >My Watchlist</a
+        <h1 class="text-3xl font-bold text-white sm:text-5xl">My Watchlist</h1>
+        <a href="./index.html" class="text-xs font-bold text-white sm:text-sm"
+          >Search for movies</a
         >
       </div>
-      <form
-        class="flex w-full items-center justify-center bg-black py-4 sm:w-auto"
-      >
-        <i
-          class="fa-solid fa-magnifying-glass rounded-l-md bg-[#2E2E2F] p-2 text-gray-400"
-        ></i>
-        <input
-          id="search-input"
-          type="text"
-          placeholder="Search a film"
-          class="w-1/2 bg-[#2E2E2F] px-2 py-1 text-gray-400"
-        />
-        <button
-          class="cursor-pointer rounded-r-md bg-[#4B4B4B] px-6 py-1 text-white hover:bg-[#202020] hover:transition-all"
-          id="search-btn"
-        >
-          Search
-        </button>
-      </form>
     </header>
     <main
-      id="films-container"
-      class="flex min-h-[80vh] w-full flex-col items-center justify-center bg-black sm:max-w-[550px]"
-    >
-      <p class="w-full text-center text-[#2e2e2f]">
-        <i class="fa-solid fa-film w-full text-6xl text-[#2e2e2f]"></i>
-        Start exploring
-      </p>
-    </main>
-    <script src="main.js"></script>
+      class="flex min-h-[80vh] w-full flex-col items-center bg-black sm:max-w-[550px]"
+    ></main>
+    <script src="mywatchlist.js"></script>
   </body>
 </html>
