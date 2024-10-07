@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./main.js",
     "./mywatchlist.js",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./mywatchlist.js",
   ],
   theme: {
     extend: {
