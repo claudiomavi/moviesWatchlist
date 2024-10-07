@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="flex flex-col items-center justify-center font-Inter sm:mt-16">
+    <header class="w-full sm:max-w-[550px]">
+      <!-- Cambié el contenedor del header para que no se desplace en pantallas grandes -->
+      <div
+        style="
+          background-image: linear-gradient(
+              rgba(14, 14, 14, 0.5),
+              rgba(14, 14, 14, 0.1)
+            ),
+            url(/assets/image\ 36.png);
+        "
+        class="flex h-[20vh] items-center justify-between p-4 text-center sm:mx-auto sm:h-[30vh] sm:max-w-[550px]"
+      >
+        <h1 class="text-3xl font-bold text-white sm:text-5xl">
+          Find your film
+        </h1>
+        <a href="#" class="text-xs font-bold text-white sm:text-sm"
+          >My Watchlist</a
+        >
+      </div>
+      <form
+        class="flex w-full items-center justify-center bg-black py-4 sm:w-auto"
+      >
+        <i
+          class="fa-solid fa-magnifying-glass rounded-l-md bg-[#2E2E2F] p-2 text-gray-400"
+        ></i>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search a film"
+          class="w-1/2 bg-[#2E2E2F] px-2 py-1 text-gray-400"
+        />
+        <button
+          class="cursor-pointer rounded-r-md bg-[#4B4B4B] px-6 py-1 text-white hover:bg-[#202020] hover:transition-all"
+          id="search-btn"
+        >
+          Search
+        </button>
+      </form>
+    </header>
+    <main
+      id="films-container"
+      class="flex min-h-[80vh] w-full flex-col items-center justify-center bg-black sm:max-w-[550px]"
+    >
+      <p class="w-full text-center text-[#2e2e2f]">
+        <i class="fa-solid fa-film w-full text-6xl text-[#2e2e2f]"></i>
+        Start exploring
+      </p>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
