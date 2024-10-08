@@ -8,7 +8,11 @@ export default {
         index: "index.html",
         watch: "mywatchlist.html",
         main: "main.js",
-        list: "mywatchlist.js",
+        mywatchlist: "mywatchlist.js",
+      },
+      output: {
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
       },
     },
   },
